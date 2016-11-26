@@ -1,7 +1,7 @@
 /* global it */
 /* global expect */
 
-import { verify } from '.'
+import { verify } from '../src'
 import * as Fixture from './fixtures'
 
 it('returns legit when the message and the supposed signer match', async () => {

@@ -4,7 +4,7 @@ import kbpgp from 'kbpgp'
 const importFromArmoredPgp = P.promisify(kbpgp.KeyManager.import_from_armored_pgp)
 const unbox = P.promisify(kbpgp.unbox)
 
-export async function verify (publicKey, message) {
+module.exports = async function verify (publicKey, message) {
   try {
     const keyManager = await importFromArmoredPgp({armored: publicKey})
         .then((keyManager) => keyManager)

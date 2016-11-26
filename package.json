@@ -2,9 +2,11 @@
   "name": "keybase-verify",
   "version": "0.0.0",
   "description": "Verify that a message was signed by the owner of the public key",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
-    "test": "standard && jest"
+    "test": "standard && jest",
+    "compile": "rimraf lib/ && babel -d lib/ src/",
+    "prepublish": "npm run compile"
   },
   "repository": {
     "type": "git",
@@ -34,13 +36,17 @@
   },
   "homepage": "https://github.com/jjperezaguinaga/keybase-verify#readme",
   "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-core": "^6.18.2",
     "babel-jest": "^17.0.2",
-    "babel-polyfill": "^6.16.0",
+    "babel-plugin-transform-runtime": "^6.15.0",
     "babel-preset-es2015": "^6.18.0",
     "babel-preset-stage-3": "^6.17.0",
+    "rimraf": "^2.5.4",
     "standard": "^8.6.0"
   },
   "dependencies": {
+    "babel-runtime": "^6.18.0",
     "bluebird": "^3.4.6",
     "kbpgp": "^2.0.59"
   }
