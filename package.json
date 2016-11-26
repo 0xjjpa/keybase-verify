@@ -16,7 +16,7 @@
     "node": ">=6"
   },
   "files": [
-    "index.js"
+    "lib/index.js"
   ],
   "keywords": [
     "keybase",
