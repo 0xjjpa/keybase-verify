@@ -1,4 +1,5 @@
 # keybase-verify [![Build Status](https://img.shields.io/travis/jjperezaguinaga/keybase-verify/master.svg?style=flat-square)](https://travis-ci.org/jjperezaguinaga/keybase-verify)
+[![js-standard-style](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
 
 🔑  Using kbpgp to verify messages based on a public key
 
