@@ -1,6 +1,6 @@
 {
   "name": "keybase-verify",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Verify that a message was signed by the owner of the public key",
   "main": "lib/index.js",
   "scripts": {
